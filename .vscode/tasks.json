@@ -6,14 +6,18 @@
             "type": "shell",
             "command": "java",
             "args": [
-                "${relativeFile}"
+                "${relativeFile}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "2>&1"
             ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
             "presentation": {
                 "reveal": "never"
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
             },
             "problemMatcher": {
                 "owner": "java",
@@ -27,6 +31,20 @@
                     "message": 5
                 }
             }
+        },
+        {
+            "type": "java (build)",
+            "paths": [
+                "${workspace}"
+            ],
+            "isFullBuild": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "label": "java (build): Build Workspace",
+            "detail": "$(tools) Build all the Java projects in workspace."
         }
     ]
 }
