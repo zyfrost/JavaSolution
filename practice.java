@@ -2,7 +2,6 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class practice {
-[ data | address ] -> [ data | address ]
   public static void main(String[] args) {
     LinkedList<String> linkedList = new LinkedList<String>();
     // * this is Treating Linkedlist as Stack
