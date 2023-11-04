@@ -1,10 +1,11 @@
-import java.util.Queue;
-import java.util.Collections;
+
+
 import java.util.PriorityQueue;
+import java.util.Queue;
 
-public class practice {
 
-  public static void main(String[] args) {
+public class priorityqueue {
+     public static void main(String[] args) {
     /*
      * Priority Queue = FIFO Data Structure , that serves elements based with
      * highest priority first before lower priority
@@ -29,4 +30,6 @@ public class practice {
      */
 
   }
+
+    
 }
